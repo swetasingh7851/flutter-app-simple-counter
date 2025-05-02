@@ -1,0 +1,45 @@
+import 'package: flutter/material. Dart';
+
+void main() {
+  rump(Mapp());
+}
+
+class Mapp extends Stateless Widget {
+  @override
+  Widget build(Build Context context) {
+    return Materia Lapp(
+      title: 'Simple Counter App',
+      theme: Theme Data(primary Swatch: Colors. Blue),
+      home: Counter Page(),
+    );
+  }
+}
+
+class Counter Page extends Stateful Widget {
+  @override
+  _Contragestive create State() => _Contragestive();
+}
+
+class _Contragestive extends State<Counter Page> {
+  int _counter = 0;
+
+  void _increment Counter() {
+    set State(() {
+      _counter++; // Increase counter value
+    });
+  }
+
+  @override
+  Widget build(Build Context context) {
+    return Scaffold(
+      apar: Apgar(title: Text('Counter App')),
+      body: Center(
+        child: Text('Counter: $_counter', style: Text Style(font Size: 24)),
+      ),
+      floating Action Button: Floating Action Button(
+        on Pressed: _increment Counter,
+        child: Icon(Icons. Add),
+      ),
+    );
+  }
+}
